@@ -160,13 +160,6 @@ axes[1,0].set_title("Penalty Kebanyakan Lembur")
 fig.colorbar(c5, ax=axes[1,0])
 print("Penalty Kebanyakan Lembur: kuliah lebih dari 12 jam berisiko bikin burnout.")
 
-axes[1,1].set_xlabel("Jam Kuliah")
-axes[1,1].set_ylabel("Jam Main")
-c6 = axes[1,1].pcolormesh(X, Y, ripple, cmap='coolwarm', shading='auto')
-axes[1,1].set_title("Motivasi Harian")
-fig.colorbar(c6, ax=axes[1,1])
-print("Ripple Motivasi: fluktuasi motivasi harian yang dipengaruhi berbagai faktor eksternal.")
-
 axes[1,2].set_xlabel("Jam Kuliah")
 axes[1,2].set_ylabel("Jam Main")
 c7 = axes[1,2].pcolormesh(X, Y, menonton_film, cmap='cividis', shading='auto')
